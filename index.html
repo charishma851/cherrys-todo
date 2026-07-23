@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="theme.css"/>
+</head>
+
+<body>
+
+<div class="container">
+  <button id="themeBtn">🌙 Dark Mode</button>
+  <h1 class="title">Welcome Back 💗</h1>
+  <p class="subtitle">Login to continue</p>
+
+  <input id="username" type="text" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+
+  <button onclick="loginUser()" class="btn">Login</button>
+
+  <p class="small">Don't have an account? <span onclick="showSignup()">Create One</span></p>
+</div>
+
+<!-- Signup Box -->
+<div class="container hidden" id="signupBox">
+
+  <h1 class="title">Create Account 🌷</h1>
+
+  <input id="newUser" type="text" placeholder="Create Username">
+  <input id="newPass" type="password" placeholder="Create Password">
+
+  <button onclick="createUser()" class="btn">Sign Up ✨</button>
+
+  <p class="small" onclick="hideSignup()">⬅ Back to Login</p>
+</div>
+
+<script src="login.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

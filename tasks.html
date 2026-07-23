@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="tasks.css">
+  <link rel="stylesheet" href="theme.css"/>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1 class="title">My Goals 🎯💗</h1>
+  <p class="subtitle">Let’s chase your dreams calmly, one day at a time ✨</p>
+
+  <div id="taskList" class="taskList"></div>
+
+  <button class="addBtn" onclick="openPopup()">➕ Add New Task</button>
+
+  <a href="dashboard.html" class="backBtn">⬅ Back to Dashboard</a>
+
+</div>
+
+
+<!-- Popup Box -->
+<div class="popup" id="popup">
+  <div class="popupBox">
+    <h2>Create New Goal 🌷</h2>
+
+    <input id="taskName" type="text" placeholder="Goal Name (ex: DSA Practice)">
+    <input id="taskDays" type="number" placeholder="Duration in Days (ex: 90)">
+    <input id="taskTime" type="number" placeholder="Daily Time (hours ex: 2)">
+
+    <div class="popupBtns">
+      <button onclick="saveTask()">Save 💖</button>
+      <button onclick="closePopup()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="tasks.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

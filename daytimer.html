@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dayTimer.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="taskName" class="title">Task 🎯</h1>
+
+    <p id="dayText" class="subtitle"></p>
+
+    <!-- Timer Card -->
+    <div class="timerBox">
+
+        <div id="timer">00:00:00</div>
+
+        <p id="statusText"></p>
+
+        <div class="buttons">
+
+            <button class="startBtn" onclick="startTimer()">
+                ▶ Start
+            </button>
+
+            <button class="pauseBtn" onclick="pauseTimer()">
+                ⏸ Pause
+            </button>
+
+            <button class="resetBtn" onclick="resetTimer()">
+                🔄 Reset
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Notes -->
+
+    <h2 class="notesTitle">
+        📝 Study Notes
+    </h2>
+
+    <textarea
+        id="notes"
+        placeholder="Write formulas, concepts, mistakes, important points..."
+    ></textarea>
+
+    <div class="actionButtons">
+
+        <button
+            class="saveBtn"
+            onclick="saveNotes()">
+
+            💖 Save Notes
+
+        </button>
+
+        <button
+            class="finishBtn"
+            onclick="finishDay()">
+
+            ✅ Finish Day
+
+        </button>
+
+    </div>
+
+    <a
+        href="taskDays.html"
+        class="backBtn">
+
+        ⬅ Back to Days
+
+    </a>
+
+</div>
+
+<script src="dayTimer.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

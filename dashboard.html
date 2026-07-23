@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+   <link rel="stylesheet" href="dashboard.css"/>
+<link rel="stylesheet" href="theme.css"/>
+</head>
+<body>
+    <div class="container">
+
+<button onclick="toggleTheme()" id="themeBtn">🌙</button>
+
+<h1 class="title">Hi, Cherry 🌸</h1>
+    <p class="subtitle">Welcome to your cute little world ✨</p>
+    <div class="stats">
+
+    <div class="statCard">
+        <span class="statEmoji">🎯</span>
+        <h2 id="goalCount">0</h2>
+        <p>Goals</p>
+    </div>
+
+    <div class="statCard">
+        <span class="statEmoji">✔</span>
+        <h2 id="completedDays">0</h2>
+        <p>Completed Days</p>
+    </div>
+
+    <div class="statCard">
+        <span class="statEmoji">🔥</span>
+        <h2 id="streakCount">0</h2>
+        <p>Streak</p>
+    </div>
+
+    <div class="statCard">
+        <span class="statEmoji">⏰</span>
+        <h2 id="studyHours">0</h2>
+        <p>Hours</p>
+    </div>
+
+</div>
+    <div class="menu">
+
+        <a href="tasks.html" class="box">
+            <span class="emoji">🎀</span>
+            <p>Tasks</p>
+        </a>
+
+        <a href="todo.html" class="box">
+            <span class="emoji">📝</span>
+            <p>To-Do</p>
+        </a>
+        <a href="diary.html" class="box">
+            <span class="emoji">📖</span>
+            <p>Diary</p>
+        </a>
+
+    </div>
+
+    <button onclick="logout()" class="logoutBtn">Logout 🚪</button>
+
+<script src="auth.js"></script>
+<script src="dashboard.js"></script>
+<script src="theme.js"></script>
+
+
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Segoe UI", Arial;
+  background: linear-gradient(135deg,#ffb6d9,#ff85c0);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:20px 0;
+  overflow-y:auto;
+}
+
+.container{
+  width:90%;
+  max-width:420px;
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  margin:20px 0;
+}
+
+.title{
+  color:#ff4f9a;
+  font-size:28px;
+  font-weight:700;
+}
+
+.subtitle{
+  color:#777;
+  margin-top:5px;
+  margin-bottom:25px;
+}
+
+.inputBox{
+  display:flex;
+  gap:10px;
+}
+
+.inputBox input{
+  flex:1;
+  padding:10px;
+  border-radius:10px;
+  border:2px solid #ff9fcb;
+  outline:none;
+}
+
+.inputBox button{
+  padding:10px 14px;
+  border:none;
+  background:#ff4fa3;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+
+.inputBox button:hover{
+  background:#ff8fcf;
+}
+
+/* Task List */
+#taskList{
+  margin-top:20px;
+  list-style:none;
+}
+
+li{
+  background:#ffe6f2;
+  padding:12px;
+  margin-top:10px;
+  border-radius:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:2px dashed #ff9fcb;
+  font-size:17px;
+  transform: scale(0.9);
+  opacity:0;
+  animation: pop .3s forwards;
+}
+
+@keyframes pop {
+  to{
+    transform: scale(1);
+    opacity:1;
+  }
+}
+
+/* Smooth tick effect */
+.completed{
+  text-decoration:line-through;
+  color:#888;
+  transition:.3s;
+}
+
+.remove{
+  animation: fadeout .3s forwards;
+}
+
+@keyframes fadeout {
+  to{
+    opacity:0;
+    transform: translateX(40px);
+  }
+}
+
+/* Buttons on each task */
+.btns button{
+  margin-left:8px;
+  border:none;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.done{
+  background:#90ee90;
+}
+
+.delete{
+  background:#ff7f7f;
+  color:white;
+}
+
+/* Back Button */
+.backBtn{
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  padding:10px 15px;
+  background:#ffb3d9;
+  color:#a3005b;
+  border-radius:10px;
+  font-weight:600;
+}
+
+
+
+@keyframes float{
+  to{
+    transform: translateY(-40px);
+    opacity:0;
+  }
+}

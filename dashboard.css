@@ -1,0 +1,258 @@
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- Body ---------- */
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:linear-gradient(135deg,#ffe8f3,#ffcae6,#ff9fcb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+/* ---------- Main Card ---------- */
+
+.container{
+
+    width:100%;
+    max-width:470px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    text-align:center;
+
+    position:relative;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+        0 12px 35px rgba(255,105,180,.25);
+
+}
+
+/* ---------- Theme Button ---------- */
+
+#themeBtn{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    background:linear-gradient(135deg,#ff9fcb,#ffd5ea);
+
+    box-shadow:0 5px 15px rgba(255,105,180,.35);
+
+    transition:.35s;
+
+}
+
+#themeBtn:hover{
+
+    transform:rotate(20deg) scale(1.08);
+
+}
+
+/* ---------- Heading ---------- */
+
+.title{
+
+    font-size:38px;
+
+    color:#ff3f91;
+
+    font-weight:700;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+    font-size:15px;
+
+}
+
+/* ---------- Menu ---------- */
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ---------- Cards ---------- */
+
+.box{
+
+    text-decoration:none;
+
+    background:linear-gradient(135deg,#fff6fb,#ffe5f1);
+
+    border-radius:24px;
+
+    padding:22px;
+
+    color:#ff4f9a;
+
+    transition:.35s;
+
+    box-shadow:0 10px 20px rgba(255,105,180,.18);
+
+}
+
+.box:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:0 20px 35px rgba(255,105,180,.25);
+
+}
+
+/* ---------- Emoji ---------- */
+
+.emoji{
+
+    display:block;
+
+    font-size:36px;
+
+    margin-bottom:12px;
+
+}
+
+.box p{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* ---------- Logout ---------- */
+
+.logoutBtn{
+
+    width:100%;
+
+    margin-top:28px;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(135deg,#ff5ba7,#ff8ec5);
+
+    transition:.35s;
+
+}
+
+.logoutBtn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(255,105,180,.3);
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:500px){
+
+    .container{
+
+        padding:28px;
+
+    }
+
+    .title{
+
+        font-size:32px;
+
+    }
+
+    .box{
+
+        padding:20px;
+
+    }
+
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.statCard{
+    background:linear-gradient(135deg,#fff6fb,#ffe5f1);
+    padding:18px;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(255,105,180,.18);
+    transition:.3s;
+}
+
+.statCard:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 25px rgba(255,105,180,.28);
+}
+
+.statEmoji{
+    font-size:28px;
+}
+
+.statCard h2{
+    color:#ff3f91;
+    margin-top:8px;
+    font-size:28px;
+}
+
+.statCard p{
+    color:#666;
+    margin-top:4px;
+}

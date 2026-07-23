@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diary</title>
+  <link rel="stylesheet" href="diary.css">
+</head>
+
+<body>
+
+<div class="container">
+   <link rel="stylesheet" href="theme.css"/>
+  <h1 class="title">My Diary 📖💗</h1>
+  <p class="subtitle">Write your heart out, beautiful ✨</p>
+
+  <div class="dateBox">
+      <label>Select Date:</label>
+      <input type="date" id="dateInput">
+  </div>
+
+  <textarea id="diaryText" placeholder="How was your day? Write your thoughts, feelings, rants, wins... anything you want 🥺💖"></textarea>
+
+  <div class="buttons">
+      <button onclick="saveDiary()">Save Entry ✨</button>
+      <button onclick="clearDiary()">Clear ❌</button>
+  </div>
+
+  <h2 class="title2">Saved Entries 🌷</h2>
+  <ul id="entriesList"></ul>
+
+  <a href="dashboard.html" class="backBtn">⬅ Back to Dashboard</a>
+
+</div>
+<script src="theme.js"></script>
+<script src="diary.js"></script>
+</body>
+</html>
