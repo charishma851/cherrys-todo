@@ -44,5 +44,5 @@ function loadDays(){
 // later this will go to timer page
 function openDay(day){
   localStorage.setItem("selectedDay", day);
-  window.location.href = "dayTimer.html";
+  window.location.href = "daytimer.html";
 }
