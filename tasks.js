@@ -200,6 +200,6 @@ function openTask(name, days, time) {
         })
     );
 
-    window.location.href = "taskDays.html";
+    window.location.href = "taskdays.html";
 
 }

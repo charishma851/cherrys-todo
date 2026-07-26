@@ -184,6 +184,6 @@ function finishDay(){
 
     alert("🎉 Great Job! Day Completed Successfully!");
 
-    window.location.href="taskDays.html";
+    window.location.href="taskdays.html";
 
 }
