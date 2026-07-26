@@ -18,7 +18,7 @@ function closePopup() {
     popup.style.display = "none";
 
     document.getElementById("taskName").value = "";
-    document.getElementById("taskDays").value = "";
+    document.getElementById("taskdays").value = "";
     document.getElementById("taskTime").value = "";
 
     editName = null;
@@ -35,7 +35,7 @@ function saveTasks() {
 function saveTask() {
 
     let name = document.getElementById("taskName").value.trim();
-    let days = document.getElementById("taskDays").value;
+    let days = document.getElementById("taskdays").value;
     let time = document.getElementById("taskTime").value;
 
     if (name === "" || days === "" || time === "") {
@@ -178,7 +178,7 @@ function editTask(name) {
     if (!task) return;
 
     document.getElementById("taskName").value = task.name;
-    document.getElementById("taskDays").value = task.days;
+    document.getElementById("taskdays").value = task.days;
     document.getElementById("taskTime").value = task.time;
 
     editName = name;
